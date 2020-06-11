@@ -1,35 +1,32 @@
-# RG30-bomberman
-UPUTSTVO:
+# RG30-Bomberman
+### Pravila igre:
+Cilj igre je da ubijete oba pauka bombama u sto kracem vremenskom periodu.
+* Kutije mogu da se ruse bombom
+* Zidovi su neunistivi
+* Kroz zidove ne mozete proci ni vi ni pauci
+* Ako vas pauci dodirnu umirete
+* Ako vas eksplozija bombe dodirne umirete
+* Ako istekne vreme, gubite igru
+* Kada umrete ili ubijete oba pauka ili vam istekne vreme, igra je zavrsena i mozete jedino resetovati igru pritiskom <kbd>r</kbd> ili iskljuciti klikom na <kbd>ESC</kbd>
 
-KONTROLE:
+<hr>
 
-W - gore
+### KONTROLE:
+<kbd>W</kbd> - gore <br>
+<kbd>S</kbd> - dole <br>
+<kbd>A</kbd> - levo <br>
+<kbd>D</kbd> - desno <br>
+<kbd>space</kbd> - bomba <br>
+<kbd>enter</kbd> - pauza/nastavak igre <br>
+<kbd>esc</kbd> - iskljucivanje <br>
+<kbd>r</kbd> - restart <br>
 
-S - dole
+<hr>
 
-A - levo
+## Uputstvo za instalaciju i pokretanj:
 
-D - desno
-
-SPACE - bomba
-
-ENTER - pauza/nastavak igre
-
-ESC - iskljucivanje
-
-r - restart
-
-Pokrecete program tako sto kucate u konzoli ./bomberman
-
-Nema dodatnih biblioteka koje su neophodne
-
-Ako menjate nesto u kodu program.c kompalirajte sa make
-
-Cilj igre je da ubijete oba pauka bombama.
-- zuti zidovi mogu da se ruse bombom
-- sivi zidovi su neunistivi
-- kroz zidove ne mozete proci ni vi ni pauci
-- ako vas pauci dodirnu umirete
-- ako vas eksplozija bombe dodirne umirete
-- kada umrete ili ubijete oba pauka, igra je zavrsena i mozete jedino resetovati igru ili iskljuciti
+* Nema dodatnih biblioteka koje su neophodne
+* Projekat preuzimate pomocu komande `git clone https://github.com/MATF-RG19/RG30-bomberman` <br>
+* Da bi pokrenuli program, pozicionirate se u Source folder i iz njega pokrenuti Makefile komandom `make` <br>
+* Zatim pokrenete program `./Bomberman`
 
