@@ -153,11 +153,6 @@ static void initialize_texture(void){
     /* Objekat koji predstavlja teskturu ucitanu iz fajla. */
     Image * image;
 
-    /* Postavlja se boja pozadine. */
-    //glClearColor(0, 0, 0, 0);
-
-    /* Ukljucuje se testiranje z-koordinate piksela. */
-    //glEnable(GL_DEPTH_TEST);
 
     /* Ukljucuju se teksture. */
     glEnable(GL_TEXTURE_2D);
@@ -964,9 +959,6 @@ static void draw_score(){
 				int len; //duzina stringa
 				glDisable(GL_LIGHTING); //Privremeno iskljucujemo osvetljenje da bi postavili boju teksta
 				glColor3f(1,0,0); //Postavljanje boje teksta
-				//glRasterPos3f(x,y,z);
-				//Postavljamo dimenzije slova
-				//glRotatef(-30,1,0,0);
 				glScalef(0.01,0.01,5);
 				glTranslatef(x,y,z);
 				len = strlen(word);
@@ -987,7 +979,6 @@ static void draw_game_over(char* word, int pob){
     gluLookAt(0, 0, 1, 
                     0, 0, 0
                     , 0, 1, 0);
-    //Koordinate za ispis teksta
     int x = -500;
     int y = 0;
     int z = 0;
@@ -1014,7 +1005,7 @@ static void draw_game_over(char* word, int pob){
 			glEnable(GL_LIGHTING); //Ponovo ukljucujemo osvetljenje
         glPopAttrib();
     glPopMatrix();
-    /*Deo za ispisivanje skora*/
+    /*Deo za ispisivanje rezultata*/
     glPushMatrix();
         glScalef(0.06,0.06,5);
         glPushAttrib(GL_LINE_BIT);
